@@ -195,7 +195,7 @@ F2 – Wert außerhalb des gültigen Bereichs
 
 F3 – Unbekannter Hinweis
 
-🧩 Erstellt von Nicklas Aue – Version 1.10 (02.12.2025)"""
+🧩 Version 1.10 (02.12.2025)"""
     messagebox.showinfo("Hilfe", help_text)
 
 def show_update_info():
