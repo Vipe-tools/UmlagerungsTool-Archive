@@ -209,7 +209,7 @@ F2 – Status Excel-Datei
 F3 – Status Barcode
 F11 – Info zu Artikel
 
-🧩 Erstellt von Nicklas Aue – Version 1.11 (11.12.2025)"""
+🧩 Version 1.11 (11.12.2025)"""
     messagebox.showinfo("Hilfe", help_text)
 
 def show_update_info():
