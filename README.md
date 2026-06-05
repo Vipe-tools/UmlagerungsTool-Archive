@@ -1,31 +1,101 @@
 # UmlagerungsTool
 
-A Python-based warehouse and inventory management tool developed to support article administration, relocation workflows, barcode generation, and Excel-based processes.
+An internal Python project for generating relocation documents, managing article templates, integrating barcodes, and automating Excel-based warehouse workflows.
 
-The project was created to solve practical workflow challenges in a German warehouse and e-commerce environment. It evolved through multiple major versions and is actively used as an internal productivity tool.
+The software was developed to simplify real business processes in a German warehouse and e-commerce environment and is actively used in daily operations.
 
-## Features
+---
 
-### Umlagerungs-Menü
+# Background
 
-* Management of relocation templates
-* Barcode generation and printing
-* Excel integration
-* Template processing
-* Relocation document creation
-* Print support
+This project originated from a practical business problem.
 
-### Artikelverwaltung
+Originally, warehouse relocation processes were documented using handwritten notes. Later, these were replaced by printed Word templates that still had to be filled out manually.
+
+As the number of products and Amazon FBA shipments increased, several problems became apparent:
+
+* Manual data entry
+* SKU transcription mistakes
+* Inconsistent documentation
+* Missing barcode integration
+* Time-consuming repetitive tasks
+* Difficult maintenance of templates
+
+The goal of the project was to standardize and automate these workflows.
+
+---
+
+# Project Structure
+
+The project consists of two connected applications.
+
+## UmlagerungsTool
+
+The main application used during daily warehouse operations.
+
+Features:
+
+* SKU-based article selection
+* Relocation document generation
+* Amazon FBA shipment processing
+* Barcode generation
+* Printing of relocation documents
+* Support for various warehouse workflows
+* Excel template integration
+
+## Artikelverwaltung
+
+Administration tool for article data and templates.
+
+Features:
 
 * Create new articles
 * Edit existing articles
 * Delete articles
-* Import and export article data
-* Automatic template generation
-* Barcode support
-* Centralized article management
+* Export articles
+* Import articles
+* Manage SKU information
+* Maintain template-related data
 
-## Technologies
+The article management application is launched directly from UmlagerungsTool and serves as the central interface for maintaining the data used by the main application.
+
+---
+
+# Supported Workflows
+
+Generated documents can contain information for various warehouse operations, including:
+
+* Relabeling
+* Repackaging
+* Removal of bands or packaging materials
+* Dangerous goods processing
+* Internal documentation
+* Amazon FBA preparation
+
+Barcodes are automatically generated and embedded into documents to reduce manual data entry and improve accuracy.
+
+---
+
+# Screenshots
+
+## UmlagerungsTool
+
+<img width="602" height="287" alt="grafik" src="https://github.com/user-attachments/assets/8afab66b-554a-46a2-aa99-83076fef9821" />
+
+
+## Artikelverwaltung
+
+<img width="716" height="547" alt="grafik" src="https://github.com/user-attachments/assets/2c8148db-9bde-4e75-beb9-b420dea05c1a" />
+
+
+## New Article Creation
+
+<img width="412" height="381" alt="grafik" src="https://github.com/user-attachments/assets/b20f676f-e4d9-4ab4-ac82-ea1b17b9eb3b" />
+
+
+---
+
+# Technologies Used
 
 * Python
 * Tkinter
@@ -34,19 +104,21 @@ The project was created to solve practical workflow challenges in a German wareh
 * PyInstaller
 * Inno Setup
 
-## Project Structure
+---
+
+# Repository Structure
 
 ```text
 assets/
 ├─ C1A.ico
-├─ icon.jpg
-└─ arial.ttf
+├─ arial.ttf
+└─ icon.jpg
 
 build/
-└─ pyinstaller_commands.txt
+└─ build_commands.txt
 
 installer/
-└─ setup2.iss
+└─ setup.iss
 
 src/
 ├─ Artikelverwaltung.pyw
@@ -58,40 +130,66 @@ templates/
 README.md
 ```
 
-## Setup
+---
 
-The application requires a folder named:
+# Setup
 
-```text
-Umlagerung
-```
-
-to exist in the same directory as the executable.
-
-Copy the template file:
+Expected directory structure:
 
 ```text
-%Vorlage%.xlsx
+Application/
+├─ UmlagerungsTool.exe
+├─ Artikelverwaltung.exe
+└─ Umlagerung/
+   └─ %Vorlage%.xlsx
 ```
 
-from the `templates` directory into the `Umlagerung` folder before running the application.
+UmlagerungsTool serves as the main application.
 
-The software expects this structure and may not function correctly if the folder or template file is missing.
+When the user opens the article management module, UmlagerungsTool searches for:
 
-The project also includes the required font file (`arial.ttf`) and build instructions used to generate the executable versions with PyInstaller.
+```text
+Artikelverwaltung.exe
+```
 
-## Project Background
+within the same directory and launches it automatically.
 
-Unlike many learning projects, this software was developed to solve real operational problems rather than as a programming exercise.
+Both applications share the same `Umlagerung` directory and use the same template files.
 
-The project combines inventory management, document generation, barcode handling, Excel automation, and installation packaging into a single workflow.
+---
 
-The user interface is currently available only in German because the software was designed for use in a German-speaking business environment.
+# Build
 
-## Status
+Build commands used for PyInstaller are stored in:
 
-Current Version: 2.0.0
+```text
+build/build_commands.txt
+```
 
-Development Status: Active
+The installer configuration is located in:
 
-Repository Type: Internal Business Tool / Portfolio Project
+```text
+installer/setup.iss
+```
+
+and can be compiled using Inno Setup.
+
+---
+
+# Status
+
+Version: 2.0.0
+
+Status: Active Development
+
+Type: Internal Business Tool / Portfolio Project
+
+The software is actively used in a real warehouse and e-commerce environment and continues to evolve based on operational requirements.
+
+---
+
+# Note
+
+This project was not created as a tutorial or learning exercise.
+
+It was developed as a practical solution to a real business problem and remains in active use within daily operations.
