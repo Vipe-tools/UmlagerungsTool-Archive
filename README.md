@@ -1,18 +1,19 @@
 # UmlagerungsTool
 
-A Python-based internal tool developed to simplify inventory relocation management and article administration.
+A Python-based warehouse and inventory management tool developed to support article administration, relocation workflows, barcode generation, and Excel-based processes.
 
-This project was created to solve real-world workflow problems in a German e-commerce and warehouse environment and evolved through multiple major versions during active use.
+The project was created to solve practical workflow challenges in a German warehouse and e-commerce environment. It evolved through multiple major versions and is actively used as an internal productivity tool.
 
 ## Features
 
 ### Umlagerungs-Menü
 
 * Management of relocation templates
-* Barcode generation
+* Barcode generation and printing
 * Excel integration
+* Template processing
+* Relocation document creation
 * Print support
-* Template selection and processing
 
 ### Artikelverwaltung
 
@@ -20,8 +21,9 @@ This project was created to solve real-world workflow problems in a German e-com
 * Edit existing articles
 * Delete articles
 * Import and export article data
-* Automatic template creation
+* Automatic template generation
 * Barcode support
+* Centralized article management
 
 ## Technologies
 
@@ -37,7 +39,14 @@ This project was created to solve real-world workflow problems in a German e-com
 ```text
 assets/
 ├─ C1A.ico
-└─ icon.jpg
+├─ icon.jpg
+└─ arial.ttf
+
+build/
+└─ pyinstaller_commands.txt
+
+installer/
+└─ setup2.iss
 
 src/
 ├─ Artikelverwaltung.pyw
@@ -45,36 +54,44 @@ src/
 
 templates/
 └─ %Vorlage%.xlsx
+
+README.md
 ```
 
 ## Setup
 
-Before running the application, create a folder named:
+The application requires a folder named:
 
 ```text
 Umlagerung
 ```
 
-in the same directory as the application.
+to exist in the same directory as the executable.
 
-Copy the provided template file:
+Copy the template file:
 
 ```text
 %Vorlage%.xlsx
 ```
 
-from the `templates` directory into the `Umlagerung` folder.
+from the `templates` directory into the `Umlagerung` folder before running the application.
 
-The software expects this structure and may not function correctly if the required folder or template file is missing.
+The software expects this structure and may not function correctly if the folder or template file is missing.
+
+The project also includes the required font file (`arial.ttf`) and build instructions used to generate the executable versions with PyInstaller.
 
 ## Project Background
 
-This project was developed as a practical business tool rather than a learning exercise.
+Unlike many learning projects, this software was developed to solve real operational problems rather than as a programming exercise.
 
-The software is actively used to support warehouse and administrative workflows. The user interface is currently available only in German because it was designed for a German-speaking work environment.
+The project combines inventory management, document generation, barcode handling, Excel automation, and installation packaging into a single workflow.
+
+The user interface is currently available only in German because the software was designed for use in a German-speaking business environment.
 
 ## Status
 
 Current Version: 2.0.0
 
 Development Status: Active
+
+Repository Type: Internal Business Tool / Portfolio Project
