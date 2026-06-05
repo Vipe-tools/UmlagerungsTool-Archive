@@ -1,0 +1,3 @@
+pyinstaller --windowed --icon=C1A.ico --name "Artikelverwaltung" "artikelverwaltung.pyw"
+
+pyinstaller --windowed --icon=C1A.ico --add-data "Umlagerung;Umlagerung" --add-data "arial.ttf;." --hidden-import=win32timezone --hidden-import=win32com --hidden-import=win32com.client --name "UmlagerungsTool" "Umlagerungs-Menü.pyw"
