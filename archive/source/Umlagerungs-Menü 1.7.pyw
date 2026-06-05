@@ -196,7 +196,7 @@ Nach dem Vorgang erscheint eine Meldung, ob der Druck erfolgreich war.
 Clear:
 Alle Eingaben löschen und aktuelles Datum wiederherstellen.
 
-🧩 Erstellt von Nicklas Aue – Version 1.7 (23.10.2025)"""
+🧩 Version 1.7 (23.10.2025)"""
     messagebox.showinfo("Hilfe", help_text)
 
 root = tk.Tk()
