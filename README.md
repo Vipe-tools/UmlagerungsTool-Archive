@@ -80,18 +80,29 @@ Barcodes are automatically generated and embedded into documents to reduce manua
 
 ## UmlagerungsTool
 
-<img width="602" height="287" alt="grafik" src="https://github.com/user-attachments/assets/8afab66b-554a-46a2-aa99-83076fef9821" />
-
+(Screenshot)
 
 ## Artikelverwaltung
 
-<img width="716" height="547" alt="grafik" src="https://github.com/user-attachments/assets/2c8148db-9bde-4e75-beb9-b420dea05c1a" />
-
+(Screenshot)
 
 ## New Article Creation
 
-<img width="412" height="381" alt="grafik" src="https://github.com/user-attachments/assets/b20f676f-e4d9-4ab4-ac82-ea1b17b9eb3b" />
+(Screenshot)
 
+---
+
+# Development History
+
+This project was not originally developed using Git or GitHub.
+
+The software started as a small internal tool and evolved through many local versions before being uploaded to GitHub.
+
+Earlier development versions have been preserved inside the `archive` directory for historical reference.
+
+These archived versions document the progression from the first working prototype to the current release and provide insight into how the software evolved over time.
+
+The repository also contains screenshots of older releases to illustrate the development process and the growth of the application.
 
 ---
 
@@ -113,6 +124,10 @@ assets/
 ├─ C1A.ico
 ├─ arial.ttf
 └─ icon.jpg
+
+archive/
+├─ source/
+└─ screenshots/
 
 build/
 └─ build_commands.txt
