@@ -272,7 +272,7 @@ Statusmeldungen:
 F1 – Hilfe
 F11 – Info zu Artikel
 
-🧩 Erstellt von Nicklas Aue – Version 1.13 (29.04.2026)
+🧩 Version 1.13 (29.04.2026)
 """
     show_long_text("Hilfe", long_help_text)
 
