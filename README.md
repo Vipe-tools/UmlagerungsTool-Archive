@@ -80,17 +80,17 @@ Barcodes are automatically generated and embedded into documents to reduce manua
 
 ## UmlagerungsTool
 
-<img width="602" height="287" alt="grafik" src="https://github.com/user-attachments/assets/23e6ffd6-cbff-4c9a-8b51-46e6ebc35d0b" />
+<img width="602" height="287" alt="grafik" src="https://github.com/user-attachments/assets/094f4ba6-0813-4456-a2e0-86d2408102a9" />
 
 
 ## Artikelverwaltung
 
-<img width="716" height="547" alt="grafik" src="https://github.com/user-attachments/assets/2868e134-ad3a-49ed-8c71-0dee04cdb2c2" />
+<img width="716" height="547" alt="grafik" src="https://github.com/user-attachments/assets/a6d8fb00-0745-40c1-b51d-cff005658816" />
 
 
 ## New Article Creation
 
-<img width="412" height="381" alt="grafik" src="https://github.com/user-attachments/assets/2894738c-2c07-49d5-bc7b-9a88eaab82d3" />
+<img width="412" height="381" alt="grafik" src="https://github.com/user-attachments/assets/96df5154-7f93-4a61-a591-a5111618c96c" />
 
 
 ---
@@ -105,7 +105,39 @@ Earlier development versions have been preserved inside the `archive` directory 
 
 These archived versions document the progression from the first working prototype to the current release and provide insight into how the software evolved over time.
 
-The repository also contains screenshots of older releases to illustrate the development process and the growth of the application.
+The repository also contains source code archives and screenshots of older releases that illustrate the development process and the gradual expansion of functionality.
+
+## Evolution of the User Interface
+
+The screenshots below show selected milestones during the development of the project.
+
+Version 1.0 represents the first working release.
+
+Version 1.6 introduced additional usability improvements and user feedback features.
+
+Version 1.13 represents the final major release before the transition to version 2.0.
+
+Version 2.0 expanded the project by introducing the separate article management application and transforming the software from a single utility into a larger workflow system.
+
+### Version 1.0
+
+<img width="506" height="232" alt="grafik" src="https://github.com/user-attachments/assets/45d97c60-00c8-46a0-8351-e370e95349a4" />
+
+
+### Version 1.6
+
+<img width="583" height="259" alt="grafik" src="https://github.com/user-attachments/assets/db4989bd-2dd4-4dac-8916-394f44501af8" />
+
+
+### Version 1.13
+
+<img width="603" height="289" alt="grafik" src="https://github.com/user-attachments/assets/d1fb85eb-0d3e-46d4-9bd0-20baf6d88d15" />
+
+
+### Version 2.0
+
+<img width="602" height="287" alt="grafik" src="https://github.com/user-attachments/assets/be493c22-bf2e-4e0c-bd25-222a956d3fd4" />
+
 
 ---
 
@@ -200,7 +232,7 @@ Version: 2.0.0
 
 Status: Active Development
 
-Type: Internal Business Tool / Portfolio Project
+Type: Internal Business Tool, Portfolio Project and Process Automation Tool
 
 The software is actively used in a real warehouse and e-commerce environment and continues to evolve based on operational requirements.
 
