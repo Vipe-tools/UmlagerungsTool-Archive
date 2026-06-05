@@ -80,15 +80,18 @@ Barcodes are automatically generated and embedded into documents to reduce manua
 
 ## UmlagerungsTool
 
-(Screenshot)
+<img width="602" height="287" alt="grafik" src="https://github.com/user-attachments/assets/23e6ffd6-cbff-4c9a-8b51-46e6ebc35d0b" />
+
 
 ## Artikelverwaltung
 
-(Screenshot)
+<img width="716" height="547" alt="grafik" src="https://github.com/user-attachments/assets/2868e134-ad3a-49ed-8c71-0dee04cdb2c2" />
+
 
 ## New Article Creation
 
-(Screenshot)
+<img width="412" height="381" alt="grafik" src="https://github.com/user-attachments/assets/2894738c-2c07-49d5-bc7b-9a88eaab82d3" />
+
 
 ---
 
