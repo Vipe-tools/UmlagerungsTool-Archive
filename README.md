@@ -243,3 +243,29 @@ The software is actively used in a real warehouse and e-commerce environment and
 This project was not created as a tutorial or learning exercise.
 
 It was developed as a practical solution to a real business problem and remains in active use within daily operations.
+
+This project was not created as a tutorial, coding exercise, or portfolio demonstration.
+
+It was developed as a practical solution to a real-world warehouse and e-commerce workflow problem and remains actively used in daily operations.
+
+Platform Support
+
+The application was developed and tested exclusively for Microsoft Windows environments.
+
+Supported operating systems:
+
+Windows 7
+Windows 8 / 8.1
+Windows 10
+Windows 11
+
+Linux and macOS are not officially supported and have not been tested.
+
+License
+
+This project is released under the PolyForm Noncommercial License 1.0.0.
+
+You are welcome to view, study, modify, and use the source code for personal, educational, or internal non-commercial purposes.
+
+Commercial resale, commercial redistribution, or selling this project or substantially identical derivatives is not permitted without prior written permission from the author.
+
