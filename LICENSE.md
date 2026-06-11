@@ -4,7 +4,9 @@
  In order to get any license under these terms, you must agree
 to them as both strict obligations and conditions to all
 your licenses.
+
  # Copyright License
+ 
  The licensor grants you a copyright license for the
 software to do everything you might do with the software
 that would otherwise infringe the licensor's copyright
