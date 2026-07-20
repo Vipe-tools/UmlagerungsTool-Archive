@@ -14,7 +14,7 @@
 >
 > Development of the project has continued in the completely rewritten **UmlagerungsTool 3.0** repository:
 >
-> **https://github.com/Vipe-tools/UmlagerungsTool**
+> **[UmlagerungsTool 3.0](https://github.com/Vipe-tools/UmlagerungsTool)**
 >
 > This repository remains available as a historical archive documenting the evolution of the original project from its first prototype to the final Version 2.0 release.
 
@@ -149,7 +149,7 @@ The successor introduces a modular architecture, improved maintainability, clean
 
 The actively maintained successor is available here:
 
-**https://github.com/Vipe-tools/UmlagerungsTool**
+**[UmlagerungsTool 3.0](https://github.com/Vipe-tools/UmlagerungsTool)**
 
 ---
 
