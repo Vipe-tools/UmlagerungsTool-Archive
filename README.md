@@ -1,78 +1,111 @@
-# UmlagerungsTool
+# UmlagerungsTool-Archive
 
-An internal Python project for generating relocation documents, managing article templates, integrating barcodes, and automating Excel-based warehouse workflows.
+[![Python](https://img.shields.io/badge/Python-3.11+-3776AB?logo=python&logoColor=white)](https://www.python.org/)
+[![Windows](https://img.shields.io/badge/Windows-10%20%7C%2011-0078D6?logo=windows&logoColor=white)](https://www.microsoft.com/windows)
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![Tkinter](https://img.shields.io/badge/GUI-Tkinter-FFCC00)](https://docs.python.org/3/library/tkinter.html)
+[![OpenPyXL](https://img.shields.io/badge/Excel-openpyxl-107C41)](https://openpyxl.readthedocs.io/)
+[![PyInstaller](https://img.shields.io/badge/Build-PyInstaller-orange)](https://pyinstaller.org/)
+[![Inno Setup](https://img.shields.io/badge/Installer-Inno%20Setup-red)](https://jrsoftware.org/isinfo.php)
 
-The software was developed to simplify real business processes in a German warehouse and e-commerce environment and is actively used in daily operations.
+> [!IMPORTANT]
+>
+> **This repository is archived and is no longer under active development.**
+>
+> Development of the project has continued in the completely rewritten **UmlagerungsTool 3.0** repository:
+>
+> **https://github.com/Vipe-tools/UmlagerungsTool**
+>
+> This repository remains available as a historical archive documenting the evolution of the original project from its first prototype to the final Version 2.0 release.
+
+---
+
+## Overview
+
+UmlagerungsTool-Archive contains the original implementation of the warehouse automation software developed before the complete architectural redesign that resulted in UmlagerungsTool 3.0.
+
+The software was created to automate repetitive warehouse workflows such as relocation document generation, article management, barcode creation, Excel automation, and Amazon FBA preparation.
+
+Originally developed to solve a real operational problem inside a German warehouse environment, the application evolved over several years into a larger workflow system consisting of two connected desktop applications.
+
+Although this repository is no longer actively maintained, it documents the complete evolution of the original code base and remains available for educational and historical purposes.
 
 ---
 
 # Background
 
-This project originated from a practical business problem.
+The project originated from a practical business problem.
 
-Originally, warehouse relocation processes were documented using handwritten notes. Later, these were replaced by printed Word templates that still had to be filled out manually.
+Originally, warehouse relocation documents were completed entirely by hand.
 
-As the number of products and Amazon FBA shipments increased, several problems became apparent:
+Later, handwritten paperwork was replaced by Microsoft Word templates, but employees still had to enter all information manually for every shipment.
 
-* Manual data entry
-* SKU transcription mistakes
-* Inconsistent documentation
-* Missing barcode integration
-* Time-consuming repetitive tasks
+As warehouse operations continued to grow, several recurring issues became increasingly obvious:
+
+* Manual SKU entry
+* Typing mistakes
+* Missing barcode support
+* Repetitive data entry
 * Difficult maintenance of templates
+* Inconsistent documentation
+* Time-consuming daily workflows
 
-The goal of the project was to standardize and automate these workflows.
+The first versions automated only a small portion of these tasks.
+
+Over time the project expanded into a much larger application capable of generating relocation documents, managing article templates, creating Code128 barcodes, automating Excel templates, and significantly reducing manual work.
+
+Version 2.0 represents the final release of the original architecture before the complete rewrite that became UmlagerungsTool 3.0.
 
 ---
 
 # Project Structure
 
-The project consists of two connected applications.
+The project consists of two connected desktop applications.
 
 ## UmlagerungsTool
 
-The main application used during daily warehouse operations.
+The primary application used during daily warehouse operations.
 
-Features:
+Main features include:
 
 * SKU-based article selection
-* Relocation document generation
-* Amazon FBA shipment processing
+* Automatic relocation document generation
 * Barcode generation
-* Printing of relocation documents
-* Support for various warehouse workflows
-* Excel template integration
+* Excel template automation
+* Amazon FBA shipment support
+* Printing workflow
+* Multiple warehouse relocation workflows
 
 ## Artikelverwaltung
 
-Administration tool for article data and templates.
+The integrated article management application serves as the central interface for maintaining article templates used by the main application.
 
-Features:
+Features include:
 
-* Create new articles
-* Edit existing articles
+* Create articles
+* Edit articles
 * Delete articles
-* Export articles
-* Import articles
-* Manage SKU information
-* Maintain template-related data
+* Import article database
+* Export article database
+* Maintain SKU information
+* Manage template-related settings
 
-The article management application is launched directly from UmlagerungsTool and serves as the central interface for maintaining the data used by the main application.
+Both applications share the same article database and work together as one integrated warehouse solution.
 
 ---
 
 # Supported Workflows
 
-Generated documents can contain information for various warehouse operations, including:
+The generated documents support a variety of warehouse operations, including:
 
 * Relabeling
-* Repackaging
-* Removal of bands or packaging materials
+* Repacking
+* Removal of packaging bands
 * Dangerous goods processing
-* Internal documentation
+* Internal warehouse documentation
 * Amazon FBA preparation
 
-Barcodes are automatically generated and embedded into documents to reduce manual data entry and improve accuracy.
+Automatically generated Code128 barcodes are embedded directly into the Excel templates to improve accuracy while reducing manual work.
 
 ---
 
@@ -82,135 +115,94 @@ Barcodes are automatically generated and embedded into documents to reduce manua
 
 <img width="602" height="287" alt="grafik" src="https://github.com/user-attachments/assets/094f4ba6-0813-4456-a2e0-86d2408102a9" />
 
+---
 
 ## Artikelverwaltung
 
 <img width="716" height="547" alt="grafik" src="https://github.com/user-attachments/assets/a6d8fb00-0745-40c1-b51d-cff005658816" />
 
+---
 
 ## New Article Creation
 
 <img width="412" height="381" alt="grafik" src="https://github.com/user-attachments/assets/96df5154-7f93-4a61-a591-a5111618c96c" />
 
-
 ---
 
 # Development History
 
-This project was not originally developed using Git or GitHub.
+Unlike UmlagerungsTool 3.0, this repository was not originally developed using Git.
 
-The software started as a small internal tool and evolved through many local versions before being uploaded to GitHub.
+Development started as a small internal automation tool and evolved through numerous local versions before eventually being published on GitHub.
 
-Earlier development versions have been preserved inside the `archive` directory for historical reference.
+Earlier source code snapshots have intentionally been preserved inside the `archive` directory.
 
-These archived versions document the progression from the first working prototype to the current release and provide insight into how the software evolved over time.
+These archived versions document the progression from the first working prototype to the final Version 2.0 release and provide insight into how both the software architecture and user interface evolved over time.
 
-The repository also contains source code archives and screenshots of older releases that illustrate the development process and the gradual expansion of functionality.
+The repository also contains historical screenshots and archived source code illustrating the continuous expansion of the project.
 
-## Evolution of the User Interface
+Following Version 2.0, development moved to a completely new repository.
 
-The screenshots below show selected milestones during the development of the project.
+Instead of continuing to expand the original architecture, the project was rewritten almost entirely from scratch.
 
-Version 1.0 represents the first working release.
+The successor introduces a modular architecture, improved maintainability, cleaner separation between GUI and business logic, and a significantly improved project structure.
 
-Version 1.6 introduced additional usability improvements and user feedback features.
+The actively maintained successor is available here:
 
-Version 1.13 represents the final major release before the transition to version 2.0.
-
-Version 2.0 expanded the project by introducing the separate article management application and transforming the software from a single utility into a larger workflow system.
-
-### Version 1.0
-
-<img width="506" height="232" alt="grafik" src="https://github.com/user-attachments/assets/45d97c60-00c8-46a0-8351-e370e95349a4" />
-
-
-### Version 1.6
-
-<img width="583" height="259" alt="grafik" src="https://github.com/user-attachments/assets/db4989bd-2dd4-4dac-8916-394f44501af8" />
-
-
-### Version 1.13
-
-<img width="603" height="289" alt="grafik" src="https://github.com/user-attachments/assets/d1fb85eb-0d3e-46d4-9bd0-20baf6d88d15" />
-
-
-### Version 2.0
-
-<img width="602" height="287" alt="grafik" src="https://github.com/user-attachments/assets/be493c22-bf2e-4e0c-bd25-222a956d3fd4" />
-
+**https://github.com/Vipe-tools/UmlagerungsTool**
 
 ---
 
-# Technologies Used
+# Evolution of the User Interface
+
+The screenshots below document several milestones throughout the development of the original project.
+
+Version **1.0** represents the very first working release.
+
+Version **1.6** introduced numerous usability improvements.
+
+Version **1.13** became the final major release before the transition toward Version 2.0.
+
+Version **2.0** introduced the dedicated article management application and transformed the software from a simple utility into a considerably larger warehouse workflow system.
+
+## Version 1.0
+
+<img width="506" height="232" alt="grafik" src="https://github.com/user-attachments/assets/45d97c60-00c8-46a0-8351-e370e95349a4" />
+
+---
+
+## Version 1.6
+
+<img width="583" height="259" alt="grafik" src="https://github.com/user-attachments/assets/db4989bd-2dd4-4dac-8916-394f44501af8" />
+
+---
+
+## Version 1.13
+
+<img width="603" height="289" alt="grafik" src="https://github.com/user-attachments/assets/d1fb85eb-0d3e-46d4-9bd0-20baf6d88d15" />
+
+---
+
+## Version 2.0
+
+<img width="602" height="287" alt="grafik" src="https://github.com/user-attachments/assets/be493c22-bf2e-4e0c-bd25-222a956d3fd4" />
+
+---
+
+# Technologies
 
 * Python
 * Tkinter
-* OpenPyXL
 * Pillow
+* OpenPyXL
 * PyInstaller
 * Inno Setup
 
 ---
 
-# Repository Structure
-
-```text
-assets/
-├─ C1A.ico
-├─ arial.ttf
-└─ icon.jpg
-
-archive/
-├─ source/
-└─ screenshots/
-
-build/
-└─ build_commands.txt
-
-installer/
-└─ setup.iss
-
-src/
-├─ Artikelverwaltung.pyw
-└─ Umlagerungs-Menü.pyw
-
-templates/
-└─ %Vorlage%.xlsx
-
-README.md
-```
-
----
-
-# Setup
-
-Expected directory structure:
-
-```text
-Application/
-├─ UmlagerungsTool.exe
-├─ Artikelverwaltung.exe
-└─ Umlagerung/
-   └─ %Vorlage%.xlsx
-```
-
-UmlagerungsTool serves as the main application.
-
-When the user opens the article management module, UmlagerungsTool searches for:
-
-```text
-Artikelverwaltung.exe
-```
-
-within the same directory and launches it automatically.
-
-Both applications share the same `Umlagerung` directory and use the same template files.
-
----
-
 # Build
 
-Build commands used for PyInstaller are stored in:
+Build commands used for PyInstaller are stored inside:
 
 ```text
 build/build_commands.txt
@@ -228,40 +220,59 @@ and can be compiled using Inno Setup.
 
 # Status
 
-Version: 2.0.0
+**Version:** 2.0.0
 
-Status: Active Development
+**Repository Status:** Archived
 
-Type: Internal Business Tool, Portfolio Project and Process Automation Tool
+**Development:** Discontinued
 
-The software is actively used in a real warehouse and e-commerce environment and continues to evolve based on operational requirements.
+**Successor:** UmlagerungsTool 3.0
+
+**Current Development Repository:**
+
+https://github.com/Vipe-tools/UmlagerungsTool
+
+This repository remains available as historical documentation of the original implementation.
 
 ---
 
-# Note
-
-This project was not created as a tutorial, coding exercise, or portfolio demonstration.
-
-It was developed as a practical solution to a real-world warehouse and e-commerce workflow problem and remains actively used in daily operations.
-
 # Platform Support
 
-The application was developed and tested exclusively for Microsoft Windows environments.
+The application was developed and tested exclusively for Microsoft Windows.
 
-Supported operating systems:
+Supported operating systems include:
 
-Windows 7
-Windows 8 / 8.1
-Windows 10
-Windows 11
+* Windows 7
+* Windows 8 / 8.1
+* Windows 10
+* Windows 11
 
-Linux and macOS are not officially supported and have not been tested.
+Linux and macOS have never been officially supported.
+
+---
 
 # License
 
-This project is released under the PolyForm Noncommercial License 1.0.0.
+This project is licensed under the **PolyForm Noncommercial License 1.0.0**.
 
-You are welcome to view, study, modify, and use the source code for personal, educational, or internal non-commercial purposes.
+You are free to study, modify and use the source code for personal, educational or internal non-commercial purposes.
 
-Commercial resale, commercial redistribution, or selling this project or substantially identical derivatives is not permitted without prior written permission from the author.
+Commercial redistribution, resale or commercial use of this project or substantially identical derivatives is not permitted without prior written permission from the author.
 
+See the **LICENSE** file for the complete license text.
+
+---
+
+# Author
+
+Developed by **Vipe**.
+
+Originally created as an internal warehouse automation solution before being released publicly for educational and portfolio purposes.
+
+Although development of this repository has ended, it remains available to document the evolution of the original software.
+
+The actively maintained successor can be found here:
+
+**UmlagerungsTool 3.0**
+
+[UmlagerungsTool 3.0](https://github.com/Vipe-tools/UmlagerungsTool)
