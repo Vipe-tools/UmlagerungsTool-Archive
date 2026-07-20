@@ -147,9 +147,6 @@ Instead of continuing to expand the original architecture, the project was rewri
 
 The successor introduces a modular architecture, improved maintainability, cleaner separation between GUI and business logic, and a significantly improved project structure.
 
-The actively maintained successor is available here:
-
-**[UmlagerungsTool 3.0](https://github.com/Vipe-tools/UmlagerungsTool)**
 
 ---
 
