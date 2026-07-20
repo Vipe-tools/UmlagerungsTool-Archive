@@ -230,7 +230,7 @@ and can be compiled using Inno Setup.
 
 **Current Development Repository:**
 
-https://github.com/Vipe-tools/UmlagerungsTool
+[UmlagerungsTool 3.0](https://github.com/Vipe-tools/UmlagerungsTool)
 
 This repository remains available as historical documentation of the original implementation.
 
